@@ -22,3 +22,16 @@ def merge_all(sales_df, features_df, stores_df):
         df = df.drop(columns=["IsHoliday_feat"])
 
     return df
+
+
+def clean_data(df):
+
+    df = df.copy()
+
+    for col in ["MarkDown1", "MarkDown2", "MarkDown3", "MarkDown4", "MarkDown5"]:
+        df[col] = df[col].fillna(0)
+
+    df["CPI"] = df.groupby("Store")["CPI"].transform(lambda s: s.ffill())
+    df["Unemployment"] = df.groupby("Store")["Unemployment"].transform(lambda s: s.ffill())
+
+    return df
