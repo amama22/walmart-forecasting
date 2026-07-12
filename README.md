@@ -23,7 +23,6 @@ walmart-forecasting/
 
 ---
 
-
 ## მონაცემები და EDA
 
 *(იხ. `notebooks/eda_feature_engineering.ipynb`)*
@@ -366,5 +365,6 @@ TFT-სა და PatchTST-ს შორის PatchTST ავირჩიეთ
 
 
 
-
+## ექსპერიმენტების ბმული
+https://dagshub.com/amama22/walmart-forecasting.mlflow/#/experiments
 
