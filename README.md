@@ -4,7 +4,6 @@ Kaggle-ის კონკურსში **Walmart Recruiting - Store Sales For
 
 ## რეპოზიტორიის სტრუქტურა
 
-```
 walmart-forecasting/
 ├── README.md
 ├── notebooks/
@@ -13,13 +12,16 @@ walmart-forecasting/
 ├── model_experiment_XGBoost.ipynb
 ├── model_experiment_N-BEATS.ipynb
 ├── model_experiment_PatchTST.ipynb
+├── model_experiment_DLinear.ipynb
+├── model_experiment_ARIMA_SARIMA.ipynb
+├── model_experiment_Prophet.ipynb
 ├── DLinear Kaggle Submission.ipynb
+├── model_inference.ipynb
 └── src/
     ├── data_prep.py
     ├── feature_engineering.py
     ├── evaluation.py
     └── utils.py
-```
 
 ---
 
