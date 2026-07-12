@@ -432,5 +432,6 @@ Deep Learning მოდელებმა (N-BEATS, PatchTST, DLinear) საი
 
 ## ექსპერიმენტების ბმულები
 https://dagshub.com/amama22/walmart-forecasting.mlflow/#/experiments
+
 https://wandb.ai/adane21-free-university-of-tbilisi-/walmart-forecasting-statistical
 
