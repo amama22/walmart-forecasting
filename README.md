@@ -25,6 +25,7 @@ walmart-forecasting/
     └── utils.py
 ```
 რა არის src/-ში:
+
 data_prep.py 
 
 • load_raw_data – train/test/features/stores csv-ების ჩატვირთვა.
