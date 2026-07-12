@@ -4,25 +4,32 @@ Kaggle-ის კონკურსში **Walmart Recruiting - Store Sales For
 
 ## რეპოზიტორიის სტრუქტურა
 
+```
 walmart-forecasting/
 ├── README.md
 ├── notebooks/
-│   └── eda_feature_engineering.ipynb
-├── model_experiment_LightGBM.ipynb
-├── model_experiment_XGBoost.ipynb
-├── model_experiment_N-BEATS.ipynb
-├── model_experiment_PatchTST.ipynb
-├── model_experiment_DLinear.ipynb
-├── model_experiment_ARIMA_SARIMA.ipynb
-├── model_experiment_Prophet.ipynb
-├── DLinear Kaggle Submission.ipynb
-├── model_inference.ipynb
+│   ├── eda_feature_engineering.ipynb
+│   ├── model_experiment_LightGBM.ipynb
+│   ├── model_experiment_XGBoost.ipynb
+│   ├── model_experiment_N-BEATS.ipynb
+│   ├── model_experiment_PatchTST.ipynb
+│   ├── model_experiment_DLinear.ipynb
+│   ├── model_experiment_ARIMA_SARIMA.ipynb
+│   ├── model_experiment_Prophet.ipynb
+│   ├── DLinear Kaggle Submission.ipynb
+│   └── model_inference.ipynb
 └── src/
     ├── data_prep.py
     ├── feature_engineering.py
     ├── evaluation.py
     └── utils.py
+```
+რა არის src/-ში:
 
+data_prep.py - load_raw_data: train/test/features/stores csv-ების ჩატვირთვა. merge_all: ამ ოთხი ფაილის გაერთიანება Store/Date-ზე. clean_data: MarkDown null-ების 0-ზე შევსება და CPI/Unemployment-ის per-store forward-fill.
+feature_engineering.py - აქ დაწყებული მაქვს ხეებისთვის feature-ების შედგენა. add_lag_features, add_rolling_features: lag და rolling mean/std feature-ები (ტესტირებული, მაგრამ საბოლოო pipeline-ებში არ გამოყენებულა). add_holiday_proximity: days_to_nearest_holiday. add_expanding_dept_avg, add_expanding_store_avg: expanding საშუალოები. build_all_features: ყველა ზემოთხსენებულის ერთად გაშვება.
+evaluation.py - wmae: კონკურსის ოფიციალური მეტრიკა (holiday კვირებს 5x წონა). walk_forward_splits: walk-forward CV split-ების გენერაცია tree-based მოდელებისთვის.
+utils.py - ამ ეტაპისთვის ცარიელია, დამატებითი დამხმარე ფუნქციებისთვის დარეზერვებული.
 ---
 
 ## მონაცემები და EDA
