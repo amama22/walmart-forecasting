@@ -1,24 +1,5 @@
 ## Classical & Deep Learning Statistical Models — ARIMA, SARIMA, Prophet, DLinear
 
-*(ეს სექცია აღწერს სტატისტიკური და დროითი მწკრივის deep learning მოდელების
-ექსპერიმენტებს — ARIMA, SARIMA, Prophet და DLinear. დანარჩენი მოდელების
-(XGBoost, EDA) აღწერა README-ს შესაბამის სექციებშია.)*
-
-### სარჩევი
-
-1. [მოკლე შეჯამება (TL;DR)](#მოკლე-შეჯამება-tldr)
-2. [მეთოდოლოგია](#მეთოდოლოგია)
-3. [ARIMA](#1-arima)
-4. [SARIMA](#2-sarima)
-5. [Prophet](#3-prophet)
-6. [DLinear (Deep Learning)](#4-dlinear-deep-learning)
-7. [საბოლოო შედარება](#5-საბოლოო-შედარება)
-8. [ზოგადი დასკვნა და შემდეგი ნაბიჯები](#6-ზოგადი-დასკვნა-და-შემდეგი-ნაბიჯები)
-9. [შეზღუდვები](#შეზღუდვები)
-10. [რეპროდუცირება](#რეპროდუცირება)
-
----
-
 ### მოკლე შეჯამება (TL;DR)
 
 4 მოდელი გამოვცადეთ — 3 classical statistical (ARIMA, SARIMA, Prophet) და 1 deep
